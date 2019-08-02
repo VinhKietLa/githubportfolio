@@ -7,6 +7,17 @@ body {
 	background-color: #F2F1F1;
 }
 
+/*Live demo button styles*/
+a:link {
+	color:white;
+}
+a:visited {
+	color:white;
+}
+a:hover {
+	color:orange;
+}
+
 /*-Main heading for site & navigation*/
 .main-header {
 	height:300px;
@@ -29,7 +40,8 @@ body {
 
 #Boldhello {
 	color: white;
-	margin-bottom: 1px;
+	margin-top: -40px;
+	margin-bottom: 5px;
 }
 
 #headerMyName {
@@ -61,7 +73,7 @@ body {
 	margin: auto;
 	top:0;
 	right:0;
-	bottom:-165px;
+	bottom:-130px;
 	left:0;
 	border-right:4px solid red;
 	border-bottom: 4px solid red;
@@ -117,13 +129,13 @@ body {
 	color: white;
 	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 	text-align: center;
+	padding: 1em;
 }
 
 #projectTitle {
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding-bottom: 10px;
-	color:black;
 }
 
 #projectHeading {
@@ -142,6 +154,9 @@ body {
 	background-color: black;
 	border-color: black;
 	border-radius: 5px;
+}
+.Codelink {
+	color:red;
 }
 
 .collapsible {
@@ -174,7 +189,7 @@ body {
   position: relative;
   width:100%;
   margin: auto;
-	padding: 20px;
+	padding: 5px;
 }
 
 .greenwich, .js0, .quiz {
@@ -226,18 +241,24 @@ opacity: 1;
 /*EXPERIENCE STYLESHEET*/
 .MyExperience {
 	text-align: center;
-}
-#exp {
-
+	padding: 10px;
 }
 
 .workdates,.worktasks {
-	font-size: 12px;
+	font-size: 13px;
+}
+.content {
+padding-top: 20px;
+padding-left:40px;
 }
 .worktasks {
 	padding-left: 20px;
+	padding-right: 20px;
 	line-height: 17px;
 	padding-right: 10px;
+	list-style-type: square;
+	text-align: left;
+	margin:auto;
 }
 
 .main-footer{
@@ -260,6 +281,10 @@ opacity: 1;
 .EmailMe a {
 	text-decoration: none;
 	color: white;
+}
+.copyright{
+	padding-top: 8px;
+	font-size: 13px;
 }
 
 /*sticky footer*/
