@@ -185,6 +185,18 @@ a:hover {
   background-color: #f1f1f1;
 }
 
+a.CM {
+	color: black;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.CM:link {
+	color: black;
+}
+a.CM:visited{
+	color:black;
+}
+
 .projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
   position: relative;
   width:100%;
