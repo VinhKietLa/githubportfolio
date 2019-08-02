@@ -1,0 +1,268 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', arial;
+	background-color: #F2F1F1;
+}
+
+/*-Main heading for site & navigation*/
+.main-header {
+	height:300px;
+	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.flex-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height:300px;
+	position:relative;
+}
+
+.class {
+	color:red;
+	font-weight: bold;
+}
+
+#Boldhello {
+	color: white;
+	margin-bottom: 1px;
+}
+
+#headerMyName {
+	font-size: 2em;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+
+.githublogo,.linkedinlogo, .resume {
+	width:40px;
+	height:40px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.arrowdown {
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.arrowdown::after {
+	content: '';
+	width:20px;
+	height: 20px;
+	position:absolute;
+	margin: auto;
+	top:0;
+	right:0;
+	bottom:-165px;
+	left:0;
+	border-right:4px solid red;
+	border-bottom: 4px solid red;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: 3s arrow infinite ease;
+	animation-duration: 3s arrow infinite ease;
+}
+
+@-webkit-keyframes arrow {
+	0%, 100% {
+		top:50px;
+	}
+	50% {
+		top:80px;
+	}
+}
+@keyframes arrow {
+	0%, 100% {
+		top:50px;
+	}
+	50% {
+		top:80px;
+	}
+}
+
+/*ABOUT ME SECTION MOBILE STYLES*/
+.AboutSection{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#aboutme {
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: bold;
+}
+
+#mcs {
+	text-align: center;
+}
+
+.htmlcssjs {
+	height:150px;
+	width: 375px;
+}
+
+/*Portfolio SECTION STYLES*/
+
+.Portfolio{
+	margin-top: 1em;
+	padding-top: 1em;
+	color: white;
+	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+	text-align: center;
+}
+
+#projectTitle {
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-bottom: 10px;
+	color:black;
+}
+
+#projectHeading {
+	color:orange;
+}
+
+#GithubSource{
+	border-bottom-style: solid;
+	border-color: white;
+	padding-bottom: 10px;
+
+}
+
+.githubLink, .CodeLink {
+	margin-top: 10px;
+	background-color: black;
+	border-color: black;
+	border-radius: 5px;
+}
+
+.collapsible {
+	margin-top: 10px;
+  background-color: orange;
+  color: black;
+	font-weight: bold;
+  cursor: pointer;
+  padding: 12px;
+  width: 25%;
+	border-color: black;
+	border-radius: 5px;  text-align: center;
+  font-size: 12px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.active, .collapsible:hover {
+  background-color: #ccc;
+	display:block;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
+  position: relative;
+  width:100%;
+  margin: auto;
+	padding: 20px;
+}
+
+.greenwich, .js0, .quiz {
+  display: block;
+  margin: auto;
+  width:300px;
+  height:250px;
+  border: 1px solid black;
+}
+
+.overlay, .overlay2, .overlay3, .overlay4 {
+	display: none;
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  margin: auto;
+}
+.projectOverlay:hover .overlay {
+opacity: 1;
+}
+.projectOverlay2:hover .overlay2{
+opacity: 1;
+}
+.projectOverlay3:hover .overlay3{
+opacity: 1;
+}
+.projectOverlay4:hover .overlay4{
+opacity: 1;
+}
+.text, .text2, .text3, .text4 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*EXPERIENCE STYLESHEET*/
+.MyExperience {
+	text-align: center;
+}
+#exp {
+
+}
+
+.workdates,.worktasks {
+	font-size: 12px;
+}
+.worktasks {
+	padding-left: 20px;
+	line-height: 17px;
+	padding-right: 10px;
+}
+
+.main-footer{
+	font-weight: bold;
+	display:flex;
+	height:125px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.EmailMe {
+	background-color: black;
+	border-color: black;
+	cursor: pointer;
+}
+.EmailMe a {
+	text-decoration: none;
+	color: white;
+}
+
+/*sticky footer*/
+.wrap {
+		min-height: calc(100vh - 89px);
+}
