@@ -313,3 +313,33 @@ padding-left:40px;
 .wrap {
 		min-height: calc(100vh - 89px);
 }
+
+
+@media (min-width: 768px) {
+/*float clearfix*/
+	.clearfix::after {
+	  content: " ";
+		display: table;
+		clear: both;
+	}
+
+	.col1, .col2, .col3, .col4 {
+		width: 50%;
+	}
+	.col1, .col3{
+		float:left;
+	}
+	.col2, .col4 {
+		float:right;
+	}
+
+	.content {
+		letter-spacing: 1px;
+		width: 70%;
+		margin: 0 auto;
+		font-weight: bold;
+	}
+	.worktasks{
+		font-size: 14px;
+		line-height: 21px;
+	}
