@@ -205,57 +205,12 @@ a.CM:visited{
 	color:black;
 }
 
-.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
-  position: relative;
-  width:100%;
-  margin: auto;
-	padding: 5px;
-}
-
 .greenwich, .js0, .quiz {
   display: block;
   margin: auto;
   width:300px;
   height:250px;
   border: 1px solid black;
-}
-
-.overlay, .overlay2, .overlay3, .overlay4 {
-	display: none;
-	position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 250px;
-  width: 300px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-  margin: auto;
-}
-.projectOverlay:hover .overlay {
-opacity: 1;
-}
-.projectOverlay2:hover .overlay2{
-opacity: 1;
-}
-.projectOverlay3:hover .overlay3{
-opacity: 1;
-}
-.projectOverlay4:hover .overlay4{
-opacity: 1;
-}
-.text, .text2, .text3, .text4 {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 /*EXPERIENCE STYLESHEET*/
@@ -343,3 +298,63 @@ padding-left:40px;
 		font-size: 14px;
 		line-height: 21px;
 	}
+}
+
+@media (min-width: 1200px) {
+
+	.col1, .col2, .col3, .col4 {
+		width: 50%;
+		text-align: center;
+		margin: auto;
+}
+
+	.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
+	  position: relative;
+	  width:50%;
+	  margin: 0 auto ;
+
+	}
+	.greenwich, .js, .quiz,.js0 {
+	  display: block;
+	  margin: auto;
+	  width:400px;
+	  height:300px;
+	  border: 3px solid black;
+	}
+
+	.overlay, .overlay2, .overlay3, .overlay4 {position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 300px;
+	  width: 400px;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: orange;
+	  margin: auto;
+	}
+	.projectOverlay:hover .overlay {
+	opacity: 1;
+	}
+	.projectOverlay2:hover .overlay2{
+	opacity: 1;
+	}
+	.projectOverlay3:hover .overlay3{
+	opacity: 1;
+	}
+	.projectOverlay4:hover .overlay4{
+	opacity: 1;
+	}
+	.text, .text2, .text3, .text4 {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+}
