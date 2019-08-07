@@ -302,10 +302,37 @@ padding-left:40px;
 
 @media (min-width: 1200px) {
 
+	.main-header {
+		height:320px;
+	}
+
+	#Boldhello {
+		font-size: 25px;
+	}
+	#headerMyName {
+		font-size: 38px;
+	}
+	.githublogo,.linkedinlogo, .resume {
+		width: 50px;
+		height: 50px;
+	}
+	.arrowdown::after {
+		bottom: -180px;
+		width: 27px;
+		height: 27px;
+	}
+
+
+	.Portfolio {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 	.col1, .col2, .col3, .col4 {
 		width: 50%;
 		text-align: center;
 		margin: auto;
+		padding-left: 60px;
+		padding-right: 60px;
 }
 
 	.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
@@ -357,4 +384,9 @@ padding-left:40px;
 	  transform: translate(-50%, -50%);
 	  text-align: center;
 	}
+.worktasks {
+	margin: auto;
+	width: 40%;
+}
+
 }
