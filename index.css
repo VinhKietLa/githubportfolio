@@ -327,7 +327,7 @@ padding-left:40px;
 		padding-left: 40px;
 		padding-right: 40px;
 	}
-	.col1, .col2, .col3, .col4 {
+	.col1, .col2, .col3, .col4, .col15 {
 		width: 50%;
 		text-align: center;
 		margin: auto;
@@ -335,7 +335,8 @@ padding-left:40px;
 		padding-right: 60px;
 }
 
-	.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
+	.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4,
+	.projectOverlay5 {
 	  position: relative;
 	  width:50%;
 	  margin: 0 auto ;
@@ -349,7 +350,7 @@ padding-left:40px;
 	  border: 3px solid black;
 	}
 
-	.overlay, .overlay2, .overlay3, .overlay4 {position: absolute;
+	.overlay, .overlay2, .overlay3, .overlay4, .overlay5 {position: absolute;
 	  top: 0;
 	  bottom: 0;
 	  left: 0;
@@ -373,7 +374,10 @@ padding-left:40px;
 	.projectOverlay4:hover .overlay4{
 	opacity: 1;
 	}
-	.text, .text2, .text3, .text4 {
+	.projectOverlay5:hover .overlay5{
+	opacity: 1;
+	}
+	.text, .text2, .text3, .text4, .text5 {
 	  color: white;
 	  font-size: 20px;
 	  position: absolute;
