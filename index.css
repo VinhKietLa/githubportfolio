@@ -264,6 +264,10 @@ padding-left:40px;
 	font-size: 13px;
 }
 
+.cs {
+	text-align:center;
+}
+
 /*sticky footer*/
 .wrap {
 		min-height: calc(100vh - 89px);
